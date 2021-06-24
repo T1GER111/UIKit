@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  Uigit
+//  Lesson 4
 //
-//  Created by T1GER on 22.06.2021.
+//  Created by T1GER on 23.06.2021.
 //
 
 import UIKit
@@ -14,6 +14,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func billAction(_ sender: UIButton) {
+        
+    }
+    
 
 }
 
