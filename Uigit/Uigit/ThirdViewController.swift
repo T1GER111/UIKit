@@ -220,8 +220,5 @@ extension ThirdViewController: UIPickerViewDelegate {
         }
     }
     
-    
-    
-    
 }
 
