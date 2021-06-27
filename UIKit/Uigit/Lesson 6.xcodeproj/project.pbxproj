@@ -14,8 +14,8 @@
 		040960E52687405B00055EB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040960E42687405B00055EB5 /* Assets.xcassets */; };
 		040960E82687405B00055EB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040960E62687405B00055EB5 /* LaunchScreen.storyboard */; };
 		0418D20326875A9400878AAA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418D20226875A9400878AAA /* SecondViewController.swift */; };
-		046E74FE268920FF00FF3703 /* Vnas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 046E74FC268920FF00FF3703 /* Vnas.mp3 */; };
-		046E74FF268920FF00FF3703 /* Ches.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 046E74FD268920FF00FF3703 /* Ches.mp3 */; };
+		048DDFA12689233800A2EDA2 /* Vnas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048DDF9F2689233800A2EDA2 /* Vnas.mp3 */; };
+		048DDFA22689233800A2EDA2 /* Ches.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 048DDFA02689233800A2EDA2 /* Ches.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +28,8 @@
 		040960E72687405B00055EB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		040960E92687405B00055EB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0418D20226875A9400878AAA /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		046E74FC268920FF00FF3703 /* Vnas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Vnas.mp3; path = ../../Vnas.mp3; sourceTree = "<group>"; };
-		046E74FD268920FF00FF3703 /* Ches.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Ches.mp3; path = ../../Ches.mp3; sourceTree = "<group>"; };
+		048DDF9F2689233800A2EDA2 /* Vnas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Vnas.mp3; path = ../../../../Vnas.mp3; sourceTree = "<group>"; };
+		048DDFA02689233800A2EDA2 /* Ches.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Ches.mp3; path = ../../../../Ches.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +68,8 @@
 				0418D20226875A9400878AAA /* SecondViewController.swift */,
 				040960E12687405A00055EB5 /* Main.storyboard */,
 				040960E42687405B00055EB5 /* Assets.xcassets */,
-				046E74FD268920FF00FF3703 /* Ches.mp3 */,
-				046E74FC268920FF00FF3703 /* Vnas.mp3 */,
+				048DDFA02689233800A2EDA2 /* Ches.mp3 */,
+				048DDF9F2689233800A2EDA2 /* Vnas.mp3 */,
 				040960E62687405B00055EB5 /* LaunchScreen.storyboard */,
 				040960E92687405B00055EB5 /* Info.plist */,
 			);
@@ -133,9 +133,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				046E74FE268920FF00FF3703 /* Vnas.mp3 in Resources */,
+				048DDFA12689233800A2EDA2 /* Vnas.mp3 in Resources */,
+				048DDFA22689233800A2EDA2 /* Ches.mp3 in Resources */,
 				040960E82687405B00055EB5 /* LaunchScreen.storyboard in Resources */,
-				046E74FF268920FF00FF3703 /* Ches.mp3 in Resources */,
 				040960E52687405B00055EB5 /* Assets.xcassets in Resources */,
 				040960E32687405A00055EB5 /* Main.storyboard in Resources */,
 			);
