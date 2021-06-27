@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Uigit
+//  Lesson 6
 //
-//  Created by T1GER on 22.06.2021.
+//  Created by T1GER on 26.06.2021.
 //
 
 import UIKit

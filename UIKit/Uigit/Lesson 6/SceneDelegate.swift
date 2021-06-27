@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  Uigit
+//  Lesson 6
 //
-//  Created by T1GER on 22.06.2021.
+//  Created by T1GER on 26.06.2021.
 //
 
 import UIKit
@@ -12,27 +12,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 
 
-    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // 1. Capture the scene
-             guard let windowScene = (scene as? UIWindowScene) else { return }
-             
-        // 2. Create a new UIWindow using the windowScene constructor which takes in a window scene.
-             let window = UIWindow(windowScene: windowScene)
-             
-        // 3. Create a view hierarchy programmatically
-             let viewController = FirstViewController()
-             let navigation = UINavigationController(rootViewController: viewController)
-             
-        // 4. Set the root view controller of the window with your view controller
-             window.rootViewController = navigation
-             
-        // 5. Set the window and call makeKeyAndVisible()
-             self.window = window
-             window.makeKeyAndVisible()
-    }
-
     func sceneDidDisconnect(_ scene: UIScene) {
-
+        // Called as the scene is being released by the system.
+        // This occurs shortly after the scene enters the background, or when its session is discarded.
+        // Release any resources associated with this scene that can be re-created the next time the scene connects.
+        // The scene may re-connect later, as its session was not necessarily discarded (see `application:didDiscardSceneSessions` instead).
     }
 
     func sceneDidBecomeActive(_ scene: UIScene) {
