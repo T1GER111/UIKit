@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		04273035268B0E1400B3DF02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04273034268B0E1400B3DF02 /* AppDelegate.swift */; };
 		04273037268B0E1400B3DF02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04273036268B0E1400B3DF02 /* SceneDelegate.swift */; };
-		04273039268B0E1400B3DF02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04273038268B0E1400B3DF02 /* ViewController.swift */; };
+		04273039268B0E1400B3DF02 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04273038268B0E1400B3DF02 /* FirstViewController.swift */; };
 		0427303C268B0E1400B3DF02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0427303A268B0E1400B3DF02 /* Main.storyboard */; };
 		0427303E268B0E1700B3DF02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0427303D268B0E1700B3DF02 /* Assets.xcassets */; };
 		04273041268B0E1700B3DF02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0427303F268B0E1700B3DF02 /* LaunchScreen.storyboard */; };
+		04273049268B9D2A00B3DF02 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04273048268B9D2A00B3DF02 /* SecondViewController.swift */; };
+		0427304B268B9D3000B3DF02 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0427304A268B9D3000B3DF02 /* ThirdViewController.swift */; };
+		0427305A268BECFE00B3DF02 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04273059268BECFE00B3DF02 /* Models.swift */; };
+		0427305C268C0BDC00B3DF02 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0427305B268C0BDC00B3DF02 /* FourthViewController.swift */; };
+		0427305E268C16F100B3DF02 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0427305D268C16F000B3DF02 /* video.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04273031268B0E1400B3DF02 /* Lesson 8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lesson 8.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04273034268B0E1400B3DF02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04273036268B0E1400B3DF02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04273038268B0E1400B3DF02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04273038268B0E1400B3DF02 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		0427303B268B0E1400B3DF02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0427303D268B0E1700B3DF02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04273040268B0E1700B3DF02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04273042268B0E1700B3DF02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04273048268B9D2A00B3DF02 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		0427304A268B9D3000B3DF02 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		04273059268BECFE00B3DF02 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		0427305B268C0BDC00B3DF02 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		0427305D268C16F000B3DF02 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video.mp4; path = ../../../../video.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +68,14 @@
 			children = (
 				04273034268B0E1400B3DF02 /* AppDelegate.swift */,
 				04273036268B0E1400B3DF02 /* SceneDelegate.swift */,
-				04273038268B0E1400B3DF02 /* ViewController.swift */,
+				04273038268B0E1400B3DF02 /* FirstViewController.swift */,
+				04273048268B9D2A00B3DF02 /* SecondViewController.swift */,
+				04273059268BECFE00B3DF02 /* Models.swift */,
+				0427304A268B9D3000B3DF02 /* ThirdViewController.swift */,
+				0427305B268C0BDC00B3DF02 /* FourthViewController.swift */,
 				0427303A268B0E1400B3DF02 /* Main.storyboard */,
 				0427303D268B0E1700B3DF02 /* Assets.xcassets */,
+				0427305D268C16F000B3DF02 /* video.mp4 */,
 				0427303F268B0E1700B3DF02 /* LaunchScreen.storyboard */,
 				04273042268B0E1700B3DF02 /* Info.plist */,
 			);
@@ -127,6 +142,7 @@
 				04273041268B0E1700B3DF02 /* LaunchScreen.storyboard in Resources */,
 				0427303E268B0E1700B3DF02 /* Assets.xcassets in Resources */,
 				0427303C268B0E1400B3DF02 /* Main.storyboard in Resources */,
+				0427305E268C16F100B3DF02 /* video.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +153,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04273039268B0E1400B3DF02 /* ViewController.swift in Sources */,
+				04273049268B9D2A00B3DF02 /* SecondViewController.swift in Sources */,
+				04273039268B0E1400B3DF02 /* FirstViewController.swift in Sources */,
+				0427304B268B9D3000B3DF02 /* ThirdViewController.swift in Sources */,
+				0427305C268C0BDC00B3DF02 /* FourthViewController.swift in Sources */,
+				0427305A268BECFE00B3DF02 /* Models.swift in Sources */,
 				04273035268B0E1400B3DF02 /* AppDelegate.swift in Sources */,
 				04273037268B0E1400B3DF02 /* SceneDelegate.swift in Sources */,
 			);
