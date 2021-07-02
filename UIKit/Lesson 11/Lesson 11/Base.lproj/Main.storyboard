@@ -11,7 +11,7 @@
         <!--Будильник-->
         <scene sceneID="IJX-Bm-hsz">
             <objects>
-                <viewController id="Rwz-V8-S1M" customClass="ViewController" customModule="Lesson_11" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Rwz-V8-S1M" customClass="AlarmClockViewController" customModule="Lesson_11" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G2E-tx-HRS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,7 +19,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Будильник" image="будильник" id="r16-Fi-fKC">
-                        <inset key="imageInsets" minX="7" minY="0.0" maxX="7" maxY="0.0"/>
+                        <inset key="imageInsets" minX="8" minY="2" maxX="8" maxY="0.0"/>
                     </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Xc-dn-hmj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -29,7 +29,7 @@
         <!--Мировые часы-->
         <scene sceneID="XKZ-Rk-say">
             <objects>
-                <viewController id="oaT-7R-CMO" sceneMemberID="viewController">
+                <viewController id="oaT-7R-CMO" customClass="GlobalTimeViewController" customModule="Lesson_11" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wwS-zs-x42" customClass="viewController">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,7 +37,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Мировые часы" image="vировой" id="0TB-a1-A1b">
-                        <inset key="imageInsets" minX="7" minY="0.0" maxX="7" maxY="0.0"/>
+                        <inset key="imageInsets" minX="8" minY="3" maxX="8" maxY="0.0"/>
                     </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5M2-xD-5TN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -47,7 +47,7 @@
         <!--Секундомер-->
         <scene sceneID="ffQ-ef-6yj">
             <objects>
-                <viewController id="y8B-PO-rr9" customClass="ViewController" customModule="Lesson_11" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="y8B-PO-rr9" customClass="StopWatchViewController" customModule="Lesson_11" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ieb-2f-2Kd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -66,7 +66,7 @@
         <!--Таймер-->
         <scene sceneID="zgc-NZ-uUG">
             <objects>
-                <viewController id="jTU-4c-LZO" customClass="ViewController" customModule="Lesson_11" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jTU-4c-LZO" customClass="TimerViewController" customModule="Lesson_11" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bZN-UP-vlm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -108,6 +108,9 @@
                         <inset key="imageInsets" minX="9" minY="-7" maxX="9" maxY="-9"/>
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="picker" destination="tcW-VG-e2S" id="cAc-nH-yke"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CN0-gQ-YR6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
