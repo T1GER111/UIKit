@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class AuthorizationViewController: UIViewController {
 
     //MARK: - Создание лейблов.
         let signInLabel = UILabel()
@@ -111,8 +111,8 @@ class SecondViewController: UIViewController {
 
         }
         @objc func clickOnButton() {
-            let thirdViewContoller = ThirdViewController()
-            navigationController?.pushViewController(thirdViewContoller, animated: true)
+            let menuViewContoller = MenuViewController()
+            navigationController?.pushViewController(menuViewContoller, animated: true)
         }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)

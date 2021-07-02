@@ -7,18 +7,18 @@
 
 import Foundation
 
-struct Marka {
+ struct Marka {
     let id: Int
     let name: String
 }
 
-struct Model {
+ struct Model {
     let id: Int
     let markaId: Int
     let name: String
 }
 
-class ModelData {
+ class ModelData {
 
     var marks = [Marka]()
     var models = [Model]()
@@ -141,7 +141,7 @@ class ModelData {
         self.modelsByMark = getModels(markaId: models.first!.id)
 
     }
-    func getModels(markaId: Int) -> [Model] {
+   func getModels(markaId: Int) -> [Model] {
         let models = self.models.filter { (m) in
             m.markaId == markaId
         }

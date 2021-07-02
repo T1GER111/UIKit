@@ -12,14 +12,14 @@
 		04273073268CCBD400B3DF02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04273071268CCBD400B3DF02 /* Main.storyboard */; };
 		04273075268CCBD700B3DF02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04273074268CCBD700B3DF02 /* Assets.xcassets */; };
 		04273078268CCBD700B3DF02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04273076268CCBD700B3DF02 /* LaunchScreen.storyboard */; };
-		04273082268D282100B3DF02 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04273081268D282100B3DF02 /* ThirdViewController.swift */; };
-		04273084268D282700B3DF02 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04273083268D282700B3DF02 /* FourthViewController.swift */; };
-		04273086268D283000B3DF02 /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04273085268D283000B3DF02 /* FifthViewController.swift */; };
-		04273088268D283900B3DF02 /* SixthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04273087268D283900B3DF02 /* SixthViewController.swift */; };
+		04273082268D282100B3DF02 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04273081268D282100B3DF02 /* MenuViewController.swift */; };
+		04273084268D282700B3DF02 /* MenuOfPizzaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04273083268D282700B3DF02 /* MenuOfPizzaViewController.swift */; };
+		04273086268D283000B3DF02 /* IngridientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04273085268D283000B3DF02 /* IngridientsViewController.swift */; };
+		04273088268D283900B3DF02 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04273087268D283900B3DF02 /* PaymentViewController.swift */; };
 		0427308B268D295C00B3DF02 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0427308A268D295C00B3DF02 /* Models.swift */; };
-		0477AEF1268EA29B00D4EF33 /* SeventhViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477AEF0268EA29B00D4EF33 /* SeventhViewController.swift */; };
-		04D3FF0B268E3EF0009A6FA4 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FF0A268E3EF0009A6FA4 /* FirstViewController.swift */; };
-		04D3FF0D268E3F03009A6FA4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FF0C268E3F03009A6FA4 /* SecondViewController.swift */; };
+		0477AEF1268EA29B00D4EF33 /* ProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477AEF0268EA29B00D4EF33 /* ProcessViewController.swift */; };
+		04D3FF0B268E3EF0009A6FA4 /* SelectingLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FF0A268E3EF0009A6FA4 /* SelectingLocationViewController.swift */; };
+		04D3FF0D268E3F03009A6FA4 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FF0C268E3F03009A6FA4 /* AuthorizationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,14 +30,14 @@
 		04273074268CCBD700B3DF02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04273077268CCBD700B3DF02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04273079268CCBD700B3DF02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04273081268D282100B3DF02 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
-		04273083268D282700B3DF02 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
-		04273085268D283000B3DF02 /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
-		04273087268D283900B3DF02 /* SixthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixthViewController.swift; sourceTree = "<group>"; };
+		04273081268D282100B3DF02 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		04273083268D282700B3DF02 /* MenuOfPizzaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOfPizzaViewController.swift; sourceTree = "<group>"; };
+		04273085268D283000B3DF02 /* IngridientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngridientsViewController.swift; sourceTree = "<group>"; };
+		04273087268D283900B3DF02 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		0427308A268D295C00B3DF02 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
-		0477AEF0268EA29B00D4EF33 /* SeventhViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeventhViewController.swift; sourceTree = "<group>"; };
-		04D3FF0A268E3EF0009A6FA4 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		04D3FF0C268E3F03009A6FA4 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		0477AEF0268EA29B00D4EF33 /* ProcessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessViewController.swift; sourceTree = "<group>"; };
+		04D3FF0A268E3EF0009A6FA4 /* SelectingLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectingLocationViewController.swift; sourceTree = "<group>"; };
+		04D3FF0C268E3F03009A6FA4 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,14 +84,14 @@
 		04273089268D284600B3DF02 /* View Contollers */ = {
 			isa = PBXGroup;
 			children = (
-				04D3FF0A268E3EF0009A6FA4 /* FirstViewController.swift */,
+				04D3FF0A268E3EF0009A6FA4 /* SelectingLocationViewController.swift */,
 				0427308A268D295C00B3DF02 /* Models.swift */,
-				04D3FF0C268E3F03009A6FA4 /* SecondViewController.swift */,
-				04273081268D282100B3DF02 /* ThirdViewController.swift */,
-				04273083268D282700B3DF02 /* FourthViewController.swift */,
-				04273085268D283000B3DF02 /* FifthViewController.swift */,
-				04273087268D283900B3DF02 /* SixthViewController.swift */,
-				0477AEF0268EA29B00D4EF33 /* SeventhViewController.swift */,
+				04D3FF0C268E3F03009A6FA4 /* AuthorizationViewController.swift */,
+				04273081268D282100B3DF02 /* MenuViewController.swift */,
+				04273083268D282700B3DF02 /* MenuOfPizzaViewController.swift */,
+				04273085268D283000B3DF02 /* IngridientsViewController.swift */,
+				04273087268D283900B3DF02 /* PaymentViewController.swift */,
+				0477AEF0268EA29B00D4EF33 /* ProcessViewController.swift */,
 			);
 			path = "View Contollers";
 			sourceTree = "<group>";
@@ -166,16 +166,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04273084268D282700B3DF02 /* FourthViewController.swift in Sources */,
-				04273088268D283900B3DF02 /* SixthViewController.swift in Sources */,
-				04273082268D282100B3DF02 /* ThirdViewController.swift in Sources */,
-				04D3FF0D268E3F03009A6FA4 /* SecondViewController.swift in Sources */,
-				0477AEF1268EA29B00D4EF33 /* SeventhViewController.swift in Sources */,
-				04D3FF0B268E3EF0009A6FA4 /* FirstViewController.swift in Sources */,
+				04273084268D282700B3DF02 /* MenuOfPizzaViewController.swift in Sources */,
+				04273088268D283900B3DF02 /* PaymentViewController.swift in Sources */,
+				04273082268D282100B3DF02 /* MenuViewController.swift in Sources */,
+				04D3FF0D268E3F03009A6FA4 /* AuthorizationViewController.swift in Sources */,
+				0477AEF1268EA29B00D4EF33 /* ProcessViewController.swift in Sources */,
+				04D3FF0B268E3EF0009A6FA4 /* SelectingLocationViewController.swift in Sources */,
 				0427306C268CCBD400B3DF02 /* AppDelegate.swift in Sources */,
 				0427308B268D295C00B3DF02 /* Models.swift in Sources */,
 				0427306E268CCBD400B3DF02 /* SceneDelegate.swift in Sources */,
-				04273086268D283000B3DF02 /* FifthViewController.swift in Sources */,
+				04273086268D283000B3DF02 /* IngridientsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

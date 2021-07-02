@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FourthViewController: UIViewController {
+class MenuOfPizzaViewController: UIViewController {
 
     //MARK: - Создание кнопки.
     let firstButton = UIButton()
@@ -40,7 +40,7 @@ class FourthViewController: UIViewController {
             self.firstButton.layer.shadowOpacity = 0.5
             self.firstButton.layer.shadowOffset = .zero
             self.firstButton.tag = 0
-            self.firstButton.addTarget(self, action: #selector(goToFifthViewController), for: .touchUpInside)
+            self.firstButton.addTarget(self, action: #selector(goToMenuOfPizzaViewController), for: .touchUpInside)
             
             self.secondButton.frame = CGRect(x: 350, y: 333, width: 44, height: 44)
             self.secondButton.setTitle("+", for: .normal)
@@ -52,7 +52,7 @@ class FourthViewController: UIViewController {
             self.secondButton.layer.shadowOpacity = 0.5
             self.secondButton.layer.shadowOffset = .zero
             self.secondButton.tag = 1
-            self.secondButton.addTarget(self, action: #selector(goToFifthViewController), for: .touchUpInside)
+            self.secondButton.addTarget(self, action: #selector(goToMenuOfPizzaViewController), for: .touchUpInside)
             
             //MARK: - Корректировка характеристик лейблов.
             self.firstLabel.frame = CGRect(x: 158, y: 201, width: 160, height: 37)
@@ -85,11 +85,11 @@ class FourthViewController: UIViewController {
             self.view.addSubview(secondImage)
     
     }
-        @objc func goToFifthViewController(_ sender : UIButton) {
-            let fifthViewController = FifthViewController()
-            fifthViewController.nameOfPizza = (sender.tag == 0 ? "Маргарита":"Пепперони")
-            fifthViewController.tempNC = self.navigationController!
-            let newNC = UINavigationController(rootViewController: fifthViewController)
-            present(newNC, animated: true, completion: nil)
+        @objc func goToMenuOfPizzaViewController(_ sender : UIButton) {
+            let menuOfPizzaViewController = IngridientsViewController()
+            menuOfPizzaViewController.nameOfPizza = (sender.tag == 0 ? "Маргарита":"Пепперони")
+            menuOfPizzaViewController.tempNC = self.navigationController!
+            let newNavigatorController = UINavigationController(rootViewController: menuOfPizzaViewController)
+            present(newNavigatorController, animated: true, completion: nil)
     }
 }

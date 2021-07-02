@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class SelectingLocationViewController: UIViewController {
     
     var pickerView: UIPickerView = UIPickerView()
     var firstLabelData: UILabel = UILabel()
@@ -23,6 +23,7 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        
         //MARK: - Корректировка характеристик кнопки "Перейти к авторизации ".
         button.frame = CGRect(x: 20, y: 668, width: 369, height: 50)
         button.setTitle("Перейти к авторизации", for: .normal)
@@ -43,7 +44,7 @@ class FirstViewController: UIViewController {
         pickerView.dataSource = self
         pickerView.delegate = self
         
-       
+        
         //MARK: - Корректировка характеристик первого лейбла "Выбрано сейчас:".
         firstLabelData.frame = CGRect(x: 20, y: 299, width: 369, height: 27)
         firstLabelData.text = ""
@@ -58,7 +59,6 @@ class FirstViewController: UIViewController {
         secondLabelData.font = UIFont.systemFont(ofSize: 20)
         
         //MARK: - Корректировка характеристик Image "firstImage".
-
         firstImageView.frame = CGRect(x: 20, y: 89, width: 374, height: 128)
         firstImageView.image = UIImage(named: "ДОДО-Пицца")
         
@@ -75,19 +75,19 @@ class FirstViewController: UIViewController {
         self.view.addSubview(secondLabelData)
     }
     @objc func clickOnButton(parametrSender: Any) {
-                let secondViewController = SecondViewController()
-                let navController = UINavigationController(rootViewController: secondViewController)
+        let secondViewController = AuthorizationViewController()
+        let navController = UINavigationController(rootViewController: secondViewController)
         navController.modalPresentationStyle = .fullScreen
         present(navController, animated: true)
-            }
+    }
 }
 
-extension FirstViewController: UIPickerViewDataSource {
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+extension SelectingLocationViewController: UIPickerViewDataSource {
+    internal func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 2
     }
-
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    
+    internal func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         switch component {
         case 0:
             return modelData.marks.count
@@ -99,12 +99,12 @@ extension FirstViewController: UIPickerViewDataSource {
     }
 }
 
-extension FirstViewController: UIPickerViewDelegate {
-    func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
+extension SelectingLocationViewController: UIPickerViewDelegate {
+    internal func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
         let w = pickerView.frame.size.width
         return component == 0 ? (1 / 3.0) * w : (2 / 3.0) * w
     }
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    internal func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         if component == 0 {
             let marka = modelData.marks[row]
             return marka.name
@@ -114,7 +114,7 @@ extension FirstViewController: UIPickerViewDelegate {
         }
     }
     
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    internal func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if component == 0 {
             let marka = modelData.marks[row]
             selectedMarka = marka

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SixthViewController: UIViewController {
+class PaymentViewController: UIViewController {
 
     var yourOrder = ""
     
@@ -108,17 +108,17 @@ class SixthViewController: UIViewController {
         }
     
     @objc func clickOnButton() {
-        let seventhViewController = SeventhViewController()
-        navigationController?.pushViewController(seventhViewController, animated: true)
+        let processViewController = ProcessViewController()
+        navigationController?.pushViewController(processViewController, animated: true)
     }
 
         @objc func pay() {
             let message = "Ваш заказ доставят в течений 15 минут! \nПриятного аппетита"
             let alertControl = UIAlertController(title: "Заказ оплачен!", message: message, preferredStyle: .alert)
             let actionOk = UIAlertAction(title: "Отлично!", style: .default) { _ in
-                guard let countVC = self.navigationController?.viewControllers.count else {return}
-                if countVC > 2 {
-                    let vc = self.navigationController?.viewControllers[countVC - 3]
+                guard let countOfViewControllers = self.navigationController?.viewControllers.count else {return}
+                if countOfViewControllers > 2 {
+                    let vc = self.navigationController?.viewControllers[countOfViewControllers - 3]
                     self.navigationController?.popToViewController(vc!, animated: true)
                 }
             }

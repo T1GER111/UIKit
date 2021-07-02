@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class MenuViewController: UIViewController {
 
     //MARK: - Создание лейблов.
     let pizzaLabel = UILabel()
@@ -93,8 +93,8 @@ class ThirdViewController: UIViewController {
         self.view.addSubview(secondSegmentControl)
     }
     @objc func clickOnButton() {
-        let fourthViewController = FourthViewController()
-        navigationController?.pushViewController(fourthViewController, animated: true)
+        let menuViewController = MenuOfPizzaViewController()
+        navigationController?.pushViewController(menuViewController, animated: true)
     }
     @objc func firstSelectedValue(target: UISegmentedControl) {
         if target == self.firstSegmentControl {

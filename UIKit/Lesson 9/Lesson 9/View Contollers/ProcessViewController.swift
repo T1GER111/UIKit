@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SeventhViewController: UIViewController {
+class ProcessViewController: UIViewController {
 
     //MARK: - Создание лейблов.
         var firstLabel = UILabel()

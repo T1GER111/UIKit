@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FifthViewController: UIViewController {
+class IngridientsViewController: UIViewController {
     
     var nameOfPizza = ""
     var tempNC = UINavigationController()
@@ -52,7 +52,7 @@ class FifthViewController: UIViewController {
             self.enterButton.layer.shadowRadius = 4
             self.enterButton.layer.shadowOpacity = 0.5
             self.enterButton.layer.shadowOffset = CGSize.zero
-            self.enterButton.addTarget(self, action: #selector(goToSixthViewController), for: .touchUpInside)
+            self.enterButton.addTarget(self, action: #selector(goToPaymentViewController), for: .touchUpInside)
             
             //MARK: - Корректировка характеристик тайтла "Pizza Name".
             self.titleOfPizzaName.frame = CGRect(x: 0, y: 0, width: 420, height: 60)
@@ -128,10 +128,10 @@ class FifthViewController: UIViewController {
             }
         }
     
-        @objc func goToSixthViewController() {
+        @objc func goToPaymentViewController() {
             var yourOrder = ""
             var number = 1
-            let sixthViewController = SixthViewController()
+            let paymentViewController = PaymentViewController()
 
             yourOrder = String(number) + ". Пицца " + nameOfPizza + "\n"
             if cheese {
@@ -150,8 +150,8 @@ class FifthViewController: UIViewController {
                 number += 1
                 yourOrder += String(number) + ". Маслины"
             }
-            sixthViewController.yourOrder = yourOrder
+            paymentViewController.yourOrder = yourOrder
             dismiss(animated: false, completion: nil)
-            tempNC.pushViewController(sixthViewController, animated: true)
+            tempNC.pushViewController(paymentViewController, animated: true)
     }
 }
