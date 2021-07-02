@@ -9,8 +9,14 @@ import UIKit
 
 class StopWatchViewController: UIViewController {
 
+    @IBOutlet weak var start: UIButton!
+    @IBOutlet weak var cancel: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .black
+        self.start.layer.cornerRadius = 40
+        self.cancel.layer.cornerRadius = 40
 
         // Do any additional setup after loading the view.
     }
