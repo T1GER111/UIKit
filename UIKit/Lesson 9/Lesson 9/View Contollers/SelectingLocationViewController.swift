@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SelectingLocationViewController: UIViewController {
+final class SelectingLocationViewController: UIViewController {
     
     var pickerView: UIPickerView = UIPickerView()
     var firstLabelData: UILabel = UILabel()
@@ -20,7 +20,7 @@ class SelectingLocationViewController: UIViewController {
     var selectedMarka: Marka?
     var selectedModel: Model?
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         
@@ -83,11 +83,11 @@ class SelectingLocationViewController: UIViewController {
 }
 
 extension SelectingLocationViewController: UIPickerViewDataSource {
-    internal func numberOfComponents(in pickerView: UIPickerView) -> Int {
+    public func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 2
     }
     
-    internal func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         switch component {
         case 0:
             return modelData.marks.count
@@ -100,11 +100,11 @@ extension SelectingLocationViewController: UIPickerViewDataSource {
 }
 
 extension SelectingLocationViewController: UIPickerViewDelegate {
-    internal func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
+    public func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
         let w = pickerView.frame.size.width
         return component == 0 ? (1 / 3.0) * w : (2 / 3.0) * w
     }
-    internal func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    public func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         if component == 0 {
             let marka = modelData.marks[row]
             return marka.name
@@ -114,7 +114,7 @@ extension SelectingLocationViewController: UIPickerViewDelegate {
         }
     }
     
-    internal func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    public func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if component == 0 {
             let marka = modelData.marks[row]
             selectedMarka = marka

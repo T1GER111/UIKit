@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PaymentViewController: UIViewController {
+final class PaymentViewController: UIViewController {
 
     var yourOrder = ""
     
@@ -26,7 +26,7 @@ class PaymentViewController: UIViewController {
         let switchTwo = UISwitch()
     
             
-        override func viewDidLoad() {
+    public override func viewDidLoad() {
             super.viewDidLoad()
             self.view.backgroundColor = .white
             navigationItem.title = "Оплата"
@@ -86,6 +86,7 @@ class PaymentViewController: UIViewController {
             self.switchOne.addTarget(self, action: #selector(changeSwitch(_:)), for: .valueChanged)
             self.switchTwo.addTarget(self, action: #selector(changeSwitch(_:)), for: .valueChanged)
 
+            //MARK: - Вывод на View.
             self.view.addSubview(self.firstEnterButton)
             self.view.addSubview(self.secondEnterButton)
             self.view.addSubview(self.labelOne)

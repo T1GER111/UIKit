@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AuthorizationViewController: UIViewController {
+final class AuthorizationViewController: UIViewController {
 
     //MARK: - Создание лейблов.
         let signInLabel = UILabel()

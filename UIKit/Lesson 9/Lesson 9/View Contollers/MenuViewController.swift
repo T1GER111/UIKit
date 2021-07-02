@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MenuViewController: UIViewController {
+final class MenuViewController: UIViewController {
 
     //MARK: - Создание лейблов.
     let pizzaLabel = UILabel()

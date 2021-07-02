@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MenuOfPizzaViewController: UIViewController {
+final class MenuOfPizzaViewController: UIViewController {
 
     //MARK: - Создание кнопки.
     let firstButton = UIButton()

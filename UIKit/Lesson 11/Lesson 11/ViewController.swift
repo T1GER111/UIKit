@@ -70,6 +70,5 @@ class ViewController: UIViewController {
                      break;
                  }
              }
-
 }
 

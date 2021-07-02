@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProcessViewController: UIViewController {
+final class ProcessViewController: UIViewController {
 
     //MARK: - Создание лейблов.
         var firstLabel = UILabel()
